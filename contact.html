@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Egypt - Contact Us</title>
+
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/main.css">
+
+<style>
+
+.carousel {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    border: 3px solid darkred;
+    margin-bottom: 20px;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 12s infinite;
+}
+
+.slides img {
+    width: 33.3333%;
+    height: 230px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%, 28% {
+        transform: translateX(0);
+    }
+
+    33%, 61% {
+        transform: translateX(-33.3333%);
+    }
+
+    66%, 94% {
+        transform: translateX(-66.6666%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Audio and PDF */
+
+.feature-box {
+    background-color: #fff4e8;
+    border-left: 5px solid darkred;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.feature-box a {
+    color: darkred;
+    font-weight: bold;
+}
+
+audio {
+    width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="site">
+
+<!-- Header -->
+
+<header>
+    <h1>Egypt</h1>
+    <p class="tagline">A Land of Ancient History</p>
+</header>
+
+<!-- Navigation -->
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="pyramids.html">Pyramids</a>
+    <a href="culture.html">Culture</a>
+    <a class="active" href="contact.html">Contact Us</a>
+</nav>
+
+<div class="layout">
+
+<main>
+
+<h2>Contact Us</h2>
+
+<p>
+Thank you for visiting our Egypt History website.
+Use the form below to write a message or share your
+feedback about the website.
+</p>
+
+<!-- Contact Form -->
+
+<form class="contact-form" action="#" method="get">
+
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text"
+    placeholder="Enter your name">
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email"
+    placeholder="Enter your email">
+
+    <label for="subject">Subject</label>
+    <input id="subject" name="subject" type="text"
+    placeholder="Enter subject">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5"
+    placeholder="Write your message"></textarea>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<!-- Image Carousel -->
+
+<h2>Egypt Image Carousel</h2>
+
+<div class="carousel">
+
+    <div class="slides">
+
+        <img src="https://images.unsplash.com/photo-1539768942893-daf53e448371?w=800"
+        alt="Egypt Pyramids">
+
+        <img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?w=800"
+        alt="Great Pyramid">
+
+        <img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?w=800"
+        alt="Egyptian Temple">
+
+    </div>
+
+</div>
+
+<!-- Audio File -->
+
+<h2>Egypt History Audio</h2>
+
+<div class="feature-box">
+
+    <p>Listen to Egypt History Audio:</p>
+
+    <audio controls>
+        <source src="https://www.memphis.edu/egypt/resources/mawwwpubsites.php?utm_source=chatgpt.com"
+        type="audio/mpeg">
+
+        Your browser does not support audio.
+    </audio>
+
+</div>
+
+<!-- PDF File -->
+
+<section>
+    <h2>Egypt History PDF</h2>
+
+    <a href="https://www.memphis.edu/egypt/resources/mawwwpubsites.php?utm_source=chatgpt.com" target="_blank">
+        View Egypt History PDF
+    </a>
+</section>
+</div>
+
+</main>
+
+<!-- Sidebar -->
+
+<aside>
+
+    <h3 class="side-title">Website pages:</h3>
+
+    <ul>
+        <li><a href="index.html">Back to Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="pyramids.html">Pyramids</a></li>
+        <li><a href="culture.html">Culture</a></li>
+    </ul>
+
+</aside>
+
+</div>
+
+<!-- Footer -->
+
+<footer>
+    &copy; 2026 Egypt History Website. All rights reserved.
+</footer>
+
+</div>
+
+</body>
+</html>
