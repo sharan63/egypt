@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Georgia&display=swap');
+
+body {
+    background: #e9e5dc;
+    color: #29231e;
+    font-family: Georgia, "Times New Roman", serif;
+    padding: 24px 12px;
+}
+
+.site {
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    border: 5px solid #777;
+    box-shadow: 0 3px 14px rgba(0,0,0,.18);
+}
+
+header {
+    min-height: 112px;
+    padding: 15px 24px;
+    background: linear-gradient(to right, #750e73 0%, #9845b8 35%, #fff4e7 70%, #5b0e75 100%);
+}
+
+header h1 {
+    color: #fff;
+    font-family: "Pacifico", Georgia, cursive;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0;
+    text-shadow: 1px 2px 2px #300c40;
+}
+
+.tagline {
+    margin: 3px 0 0 70px;
+    color: #2c1f13;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    background: #090807;
+    border-bottom: 3px solid #a33a28;
+}
+
+nav a {
+    flex: 1;
+    padding: 13px 8px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-right: 1px solid #777;
+}
+
+nav a:last-child { border-right: 0; }
+nav a:hover, nav a:focus, nav a.active { background: #87178b; }
+
+.layout {
+    display: flex;
+    gap: 22px;
+    padding: 20px;
+    min-height: 370px;
+}
+
+main {
+    flex: 1 1 68%;
+    min-width: 0;
+}
+
+aside {
+    flex: 0 0 190px;
+    padding-left: 15px;
+    border-left: 1px solid #ddd0c3;
+}
+
+h2 {
+    color: #8d1787;
+    font-size: 25px;
+    margin: 0 0 13px;
+}
+
+h3 {
+    color: #6e3426;
+    margin: 18px 0 8px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.55;
+    text-align: justify;
+    margin: 0 0 12px;
+}
+
+.float-image {
+    width: 245px;
+    max-width: 48%;
+    float: left;
+    margin: 0 16px 10px 0;
+    border: 3px solid #e0d4c6;
+    padding: 3px;
+    background: white;
+}
+
+.side-title {
+    color: #555;
+    font-size: 16px;
+    margin: 3px 0 10px;
+}
+
+aside ul {
+    padding-left: 20px;
+    margin: 0 0 18px;
+}
+
+aside li { margin: 0 0 7px; }
+aside a { color: #8d2117; font-weight: bold; font-size: 13px; }
+aside a:hover { color: #c16a22; }
+
+.info-box {
+    background: #fbf4e9;
+    border-left: 4px solid #a44a2d;
+    padding: 11px 13px;
+    margin: 14px 0;
+}
+
+.info-box p { margin-bottom: 0; }
+
+.card-list {
+    padding-left: 22px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0 4px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #b9a99b;
+    background: #fffdf9;
+}
+
+.contact-form textarea { resize: vertical; }
+.contact-form button {
+    margin-top: 12px;
+    padding: 10px 22px;
+    border: 0;
+    background: #8d2117;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contact-form button:hover { background: #24110e; }
+
+footer {
+    clear: both;
+    padding: 12px 18px;
+    color: #fff;
+    font-size: 11px;
+    background: linear-gradient(to right, #5f0e75, #a545b8 35%, #fff4e7 70%, #560e75);
+    text-shadow: 0 1px 1px #40100c;
+}
+
+@media (max-width: 700px) {
+    body { padding: 8px; }
+    .site { width: 100%; }
+    header { min-height: auto; }
+    header h1 { font-size: 30px; }
+    nav { flex-wrap: wrap; }
+    nav a { flex: 1 1 33.33%; }
+    .layout { display: block; padding: 15px; }
+    aside {
+        border-left: 0;
+        border-top: 1px solid #ddd0c3;
+        padding: 14px 0 0;
+        margin-top: 18px;
+    }
+    .float-image { width: 42%; }
+}
+
+@media (max-width: 430px) {
+    nav a { flex: 1 1 50%; }
+    .float-image {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 12px;
+    }
+    h2 { font-size: 21px; }
+}
